@@ -1,0 +1,13 @@
+# Exclude build output and temp folders
+**/[Bb]in/
+**/[Ob]bj/
+**/bin/
+**/obj/
+bin/
+obj/
+
+# Optional: Exclude user-specific Visual Studio settings
+.vs/
+*.user
+*.userosscache
+*.suo

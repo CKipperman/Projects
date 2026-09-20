@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="ExpenseTracker/ExpenseTracker.csproj" Id="f073dc8a-981a-4165-b489-8f4291991e47" />
+  <Project Path="ExpenseTrackerV2/ExpenseTrackerV2.csproj" Id="1abe4321-ce9b-40cf-a70b-47dcf35753e7" />
+  <Project Path="LibraryManagementSystem/LibraryManagementSystem.csproj" Id="1dfe737f-402b-4f7b-a7ca-4e4e6795c0b7" />
+  <Project Path="NumberGuessingGame/NumberGuessingGame.csproj" Id="931fe301-0c53-4242-a236-f6d779bddd80" />
+  <Project Path="SimpleCalculator/SimpleCalculator.csproj" />
+  <Project Path="ToDoListApp/TodoListApp.csproj" />
+</Solution>

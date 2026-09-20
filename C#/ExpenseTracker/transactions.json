@@ -1,0 +1,34 @@
+[
+  {
+    "Id": 2,
+    "Date": "2026-05-15T13:32:22.817982-04:00",
+    "Amount": 30,
+    "Type": 0,
+    "Category": "Salary",
+    "Description": ""
+  },
+  {
+    "Id": 3,
+    "Date": "2026-05-15T14:00:28.9460614-04:00",
+    "Amount": 70,
+    "Type": 0,
+    "Category": "Salary",
+    "Description": ""
+  },
+  {
+    "Id": 4,
+    "Date": "2026-05-15T14:00:49.6171737-04:00",
+    "Amount": 20,
+    "Type": 1,
+    "Category": "Food",
+    "Description": ""
+  },
+  {
+    "Id": 5,
+    "Date": "2026-05-15T14:01:28.3866535-04:00",
+    "Amount": 20,
+    "Type": 1,
+    "Category": "Salary",
+    "Description": ""
+  }
+]
