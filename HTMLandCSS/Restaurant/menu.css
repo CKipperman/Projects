@@ -1,0 +1,175 @@
+
+h2 {
+  font-size: 1.75em;
+  text-decoration: underline;
+  color: rgb(173, 88, 27);
+  margin-bottom: 0px;
+}
+
+.item {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+  max-width: 500px;
+  max-height: 425px;
+  overflow: auto; 
+  color: rgb(87, 9, 9, 0.75);
+}
+
+.item p::first-letter {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+.item img {
+  float: left;
+  max-width: 250px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.item p {
+  text-align: left;
+  line-height: 1.5;
+}
+
+ul, ul a{
+  list-style: square;
+  width: 200px;
+  margin: auto;    
+  text-align: left;
+  padding-top: 20px;
+  line-height: 1.5;
+  color: rgb(173, 88, 27);
+  text-decoration:underline;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-family: Montserrat;
+}
+
+#coming-soon {
+  position: absolute;
+  rotate: 10deg;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  text-shadow: 2px 2px 10px red;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+
+audio {
+  padding-bottom: 50px;
+}
+
+/* For screens smaller than 800px */
+@media (width <= 800px) {
+  .item {
+    display: block;
+    margin: 10px auto;
+  }
+
+  .item img {
+    float: none;
+    max-width: 100%;
+    margin: 0 auto 10px;
+    display: block;
+  }
+
+  .item p {
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  ul {
+    width: 106px;
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  #coming-soon {
+    translate: -180px -500px;
+    font-size: 0.9em;
+  }
+}
+
+/* Specials Table */
+.specials-table {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1em;
+  max-width: 700px;
+  margin: 20px auto;
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+
+.specials-table caption {
+  font-family: Montserrat;
+  font-size: 1.2em;
+  color: rgb(173, 88, 27);
+  font-weight: bold;
+  padding: 10px;
+}
+
+.specials-table th, .specials-table td {
+  border: 1px solid gray;
+  padding: 10px;
+  text-align: center;
+}
+
+.specials-table th {
+  color: rgb(104, 53, 16);
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+.specials-table tbody tr:nth-child(odd) {
+  background-color: #FFF8E1;
+}
+
+.specials-table tbody tr:hover, .specials-table tfoot tr:hover {
+  background-color: rgba(228, 199, 119, 0.5);
+}
+
+.specials-table tbody td:last-child{
+  background-color: rgba(173, 88, 27, 0.1);
+}
+
+.specials-table td:last-child{
+  font-style: italic;
+}
+
+.specials-table tfoot td {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(87, 9, 9, 0.75);
+  background-color: rgba(173, 88, 27, 0.2);
+  font-size: 1.1em;
+}
+
+.specials-table tfoot strong {
+  font-weight: bold;
+}
+
+.second-caption {
+  font-family: Montserrat;
+  font-size: 1.1em;
+  color: rgb(173, 88, 27);
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+}

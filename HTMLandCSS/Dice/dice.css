@@ -1,0 +1,122 @@
+html {
+    background-color: black;
+}
+
+body {
+    background-color: green;
+    margin: auto;
+    max-width: 90%;
+    min-height: 100vh;
+}
+
+.dice-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.die {
+    height: 15em;
+    width: 15em;
+    margin: 2em;
+    border: 2.5px solid black;
+    background-color: white;
+    border-radius: 10px;
+
+    display: grid;
+    /*grid-template: repeat(3, 1fr) / repeat(3, 1fr);*/
+    grid-template-areas:
+        'top-left       .        top-right'
+        'center-left    center   center-right'
+        'bottom-left    .        bottom-right';
+}
+
+.dot {
+    background-color: black;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    justify-self: center;
+    align-self: center;
+}
+
+.face-1>.dot {
+    grid-area: center;
+}
+
+/*default for first pip, not necessary to write*/
+/*
+.face-2 > .dot:nth-child(1) {
+    grid-area: top-left;
+}
+*/
+
+.face-1 .dot:nth-child(1) {
+    grid-area: center;
+}
+
+/*.face-2 .dot:nth-child(1) { grid-area: top-left; }*/
+.face-2 .dot:nth-child(2) {
+    grid-area: bottom-right;
+}
+
+/*.face-3 .dot:nth-child(1) { grid-area: top-left; }*/
+.face-3 .dot:nth-child(2) {
+    grid-area: center;
+}
+
+.face-3 .dot:nth-child(3) {
+    grid-area: bottom-right;
+}
+
+/*.face-4 .dot:nth-child(1) { grid-area: top-left; }*/
+.face-4 .dot:nth-child(2) {
+    grid-area: bottom-left;
+}
+
+.face-4 .dot:nth-child(3) {
+    grid-area: top-right;
+}
+
+.face-4 .dot:nth-child(4) {
+    grid-area: bottom-right;
+}
+
+/*.face-5 .dot:nth-child(1) { grid-area: top-left; }*/
+.face-5 .dot:nth-child(2) {
+    grid-area: bottom-left;
+}
+
+.face-5 .dot:nth-child(3) {
+    grid-area: center;
+}
+
+.face-5 .dot:nth-child(4) {
+    grid-area: top-right;
+}
+
+.face-5 .dot:nth-child(5) {
+    grid-area: bottom-right;
+}
+
+/*.face-6 .dot:nth-child(1) { grid-area: top-left; }*/
+.face-6 .dot:nth-child(2) {
+    grid-area: center-left;
+}
+
+.face-6 .dot:nth-child(3) {
+    grid-area: bottom-left;
+}
+
+.face-6 .dot:nth-child(4) {
+    grid-area: top-right;
+}
+
+.face-6 .dot:nth-child(5) {
+    grid-area: center-right;
+}
+
+.face-6 .dot:nth-child(6) {
+    grid-area: bottom-right;
+}

@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+html {
+    background-color: rgb(228, 199, 119);
+    height: 100%;
+}
+body {
+    background-color: #F9F3E7;
+    max-width: 65em;
+    margin: auto;
+    padding: 1em;
+    text-align: center;
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.15em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+section p {
+    margin-bottom: 1em;
+}
+
+header > nav {
+    font-weight: bold;
+}
+
+h2 + p {
+    font-style: italic;
+}
+
+h3 ~ p {
+    text-indent: 1em;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: chocolate;
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(87, 9, 9);
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 15px;
+    border-bottom: 1px solid gray;
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    text-align: center;
+}
+
+.logo {
+    background-image: url('images/theEateryLogo.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 112px;
+    border-radius: 20px;
+    float: left;
+    cursor: wait;
+}
+
+.header-text {
+    display: inline-block;
+    text-align: center;
+    margin-right: 195px;
+}
+
+header nav {
+    position: fixed;
+    background-color: #F9F3E7;
+    width: 65em;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    z-index: 1;
+}
+
+img {
+    height: 15em;
+    border-radius: 5%;
+}
+
+.food-img {
+    box-shadow: 6px 6px 15px black;
+}
+.breakfast-img {
+    opacity: 0.7;
+}
+
+article h2 {
+    font-size: 35px;
+}
+
+#creator {
+    text-align: left;
+    font-size: 1.15em;
+    font-family: 'Times New Roman';
+    font-style: italic;
+    padding: 10px;
+}
+
+video {
+    width: 550px;
+}
+
+h2 {
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#about-us {
+    text-decoration: underline;
+    font-size: xx-large;
+    font-family: Montserrat;
+}
+
+/* For screens smaller than 800px */
+@media (width <= 800px) {
+    body {
+        max-width: 100%;
+        padding: 0.5em;
+        font-size: 1em;
+        overflow-x: hidden;
+    }
+
+    .logo {
+        width: 150px;
+        height: 86px;
+        translate: 0px 10px;
+    }
+
+    header {
+        font-size: 0.9em;
+    }
+
+    header nav {
+        padding: 10px;
+        max-width: 100%;
+    }
+    
+    .header-text {
+        margin-right: 142px;
+    }
+
+    img {
+        height: 10em;
+        max-width: 100%;
+    }
+
+    article h2, h2 {
+        font-size: 1.5em;
+    }
+
+    article p {
+        font-size: 1em;
+    }
+    video {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    h2 {
+        margin-top: 10px;
+    }
+
+    #about-us {
+        font-size: x-large;
+    }
+
+    #creator {
+        font-size: 1em;
+        padding: 5px;
+    }
+}
+
+/*Feedback Form*/
+.feedback-form {
+    max-width: 500px;
+    margin: 50px auto 10px;
+    padding: 20px;
+    border: 1px solid gray;
+    background-color: rgba(228, 199, 119, 0.3);
+}
+
+.feedback-form h2 {
+    font-family: Montserrat;
+    color: rgb(173, 88, 27);
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+.feedback-form p {
+    color: rgb(87, 9, 9, 0.75);
+    margin-bottom: 20px;
+}
+
+.feedback-form label {
+    width: 150px;
+    float: left;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(173, 88, 27);
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+#password {
+    width: 185px;
+    float: left;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(173, 88, 27);
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+.feedback-form input[id="first"], .feedback-form input[id="last"] {
+    width: 50%;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: .9em;
+    margin-bottom: 10px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.feedback-form input[id="feedback"] {
+    width: 100%;
+    padding: 8px;
+    padding-bottom: 100px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: .9em;
+    box-sizing: border-box;
+}
+
+.feedback-form input[type="password"] {
+    width: 50%;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: .9em;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.feedback-form input[type="submit"] {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    background-color: rgb(173, 88, 27);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.feedback-form input[type="submit"]:hover {
+    background-color: chocolate;
+}
+
+.feedback-form input[type="submit"]:active {
+    background-color: rgb(87, 9, 9);
+}

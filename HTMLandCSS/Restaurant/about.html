@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <link rel="stylesheet" href="restaurant.css">
+
+    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="The Eatery" />
+    <link rel="manifest" href="images/site.webmanifest" />
+</head>
+<body>
+    <header>
+        <div class="logo"></div><a href="index.html"></a></div>
+        <div class="header-text">
+            <h1>Welcome to The Eatery</h1>
+            <p>Your neighborhood spot for delicious breakfast items all day.</p>
+        </div>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="menu.html">Our Menu</a> |
+            <a href="about.html">About Us</a>
+        </nav>
+    </header>
+
+    <h2 id="about-us">About Us:</h2>
+
+    <video src="images/TheEatery.mp4" controls xautoplay loop muted xwidth="600px"></video>
+
+    <h2>To Learn More About Us Call: 1(800) EAT-FOOD</h2>
+
+    <form method="post" class="feedback-form">
+        <h2>Share Your Feedback</h2>
+        <p>We'd love to hear about your experience at The Eatery!</p>
+        <label for="first">First Name:</label>
+        <input id="first" name="first" minlength="2" maxlength="25" placeholder="Enter your first name" required>
+        <label for="last">Last Name:</label>
+        <input id="last" name="last" minlength="2" maxlength="25" placeholder="Enter your last name" required>
+        <label for="feedback">Feedback:</label>
+        <input id="feedback" name="feedback" required minlength="10" maxlength="200" placeholder="Tell us about your visit">
+        <label id="password" for="password">Submission Password:</label>
+        <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter password"/>
+
+        <input type="submit">
+    </form>
+
+    <section id="creator">
+      <h5>Created By: Chavie Kipperman, 2025</h5>
+    </section>
+</body>
+</html>
