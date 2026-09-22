@@ -1,0 +1,16 @@
+button {
+    margin-top: 2.5em;
+    padding: 0.8em 2em;
+    font-size: 1.1em;
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: translateY(-3px);
+}

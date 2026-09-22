@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      label {
+        margin-right: 1em;
+      }
+      table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: auto;
+        margin-top: 1em;
+        background-color: white;
+      }
+      tbody:hover {
+        cursor: pointer;
+      }
+      td, th {
+        border: 1px solid black;
+        padding: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <label>
+        Font Color:
+        <input id="color" type="color" />
+      </label>
+      <label>
+        Background Color:
+        <input id="bgColor" type="color" />
+      </label>
+    </div>
+    <hr>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo veritatis, ut necessitatibus vero ipsam possimus est dignissimos totam quibusdam sunt et ea ducimus nostrum nemo sit in. Totam, soluta. Fugiat?
+    <table id="colorsTable">
+      <thead>
+        <tr>
+          <th>Time:</th>
+          <th>Font Color:</th>
+          <th>Background Color:</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="3">No colors chosen</td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="colors.js"></script>
+  </body>
+</html>

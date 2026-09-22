@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Pecan Pie",
+        "picture": "media/pecanPie.jpg",
+        "ingredients": [
+            "1 pie shell",
+            "3 eggs",
+            "1 cup corn syrup",
+            "1/2 cup sugar",
+            "1/2 cup semi-sweet chocolate chips",
+            "2 tbsp margarine",
+            "1 tsp vanilla extract",
+            "1 1/2 cups pecans"
+            ],
+        "instructions": [
+            "Mix eggs with corn syrup, sugar and vanilla extract.",
+            "Melt chocolate chips with margarine in a tin pan over a pot of boiling water.",
+            "Add melted chocolate to the batter.",
+            "Finally, add pecans.",
+            "Bake at 350°F for 50-60 minutes."
+            ]
+    }
+]

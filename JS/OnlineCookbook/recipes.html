@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <style>
+        body {
+            background-color: lightgrey
+        }
+
+        #recipeChoice {
+            text-align: center;
+        }
+
+        #display {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+        }
+
+        #display>* {
+            grid-column: 2 / 3;
+            text-align: center;
+        }
+
+        img {
+            max-width: 20em;
+            max-height: 20em;
+            display: block;
+            margin: auto;
+        }
+
+        #recipeDetails {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+        }
+
+        #ingredientDiv,
+        #instructionDiv {
+            flex: 1;
+            max-width: 15em;
+        }
+
+        #ingredientDiv ul {
+            text-align: left;
+            padding-left: 1em;
+        }
+
+        #instructionDiv p {
+            text-align: center;
+            margin: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="recipeChoice">
+        <h2>Choose a Recipe: </h2>
+    </div>
+    <div id="display"></div>
+
+    <script src="recipes.js"></script>
+</body>
+
+</html>

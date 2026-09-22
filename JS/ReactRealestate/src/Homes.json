@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "200 East 75th Street #PH2",
+        "url": "https://photos.zillowstatic.com/fp/ed880138c3356a0c0bf2bce44463a8d0-full.webp",
+        "price": "$17,500,000",
+        "rooms": 10,
+        "beds": 5,
+        "baths": 5.5
+    },
+    {
+        "id": 2,
+        "name": "201 East 74th Street TOWNHOUSE",
+        "url": "https://photos.zillowstatic.com/fp/253f63e0e3f7fc09c3f4814766f248f6-full.webp",
+        "price": "$14,500,000",
+        "rooms": 8,
+        "beds": 4,
+        "baths": 4.5
+    },
+    {
+        "id": 3,
+        "name": "123 East 71st Street",
+        "url": "https://photos.zillowstatic.com/fp/76702a68294312baf5810550f2afa989-full.webp",
+        "price": "$20,500,000",
+        "rooms": 15,
+        "beds": 7,
+        "baths": 8.5
+    },
+    {
+        "id": 4,
+        "name": "92 Laight Street #3ABC",
+        "url": "https://photos.zillowstatic.com/fp/7d83dea300ad2e8bc1352941e1946c2f-full.webp",
+        "price": "$16,000,000",
+        "rooms": 7,
+        "beds": 5,
+        "baths": 5.5
+    }
+]

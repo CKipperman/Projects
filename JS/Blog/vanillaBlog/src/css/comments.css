@@ -1,0 +1,37 @@
+.commentsContainer {
+    margin: 1.5em 2em;
+}
+
+.comment {
+    margin-bottom: 2em;
+    padding: .75em;
+    background-color: #f8f9fc;
+    border-radius: 20px;
+}
+
+.commentsContainer h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.774);
+}
+
+.commentsContainer .comment p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.829);
+}
+
+.email {
+    color: #667eea;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.email:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 800px) {
+    .commentsContainer {
+        margin: 2em 5em;
+    }
+}

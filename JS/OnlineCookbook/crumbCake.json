@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Crumb Cake",
+        "picture": "media/crumbCake.jpg",
+        "ingredients": [
+            "1 1/2 cups sugar",
+            "1 tsp vanilla",
+            "3 cups flour",
+            "1 stick margarine",
+            "1/2 cup oil",
+            "3 eggs",
+            "2 tsp baking powder",
+            "1 dessert whip"
+        ],
+        "instructions": [
+            "Mix sugar, vanilla, flour, margarine and oil.",
+            "Reserve 1 cup of the mixture and add the other ingredients to the rest and mix",
+            "Pour the batter into 9 x 13 pan and sprinkle the crumb mixture on the top",
+            "Bake at 350°F for 1 hour."
+        ]
+    }
+]

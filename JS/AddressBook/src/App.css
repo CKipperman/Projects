@@ -1,0 +1,43 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+} 
+:root {
+  margin-top: 0;
+}
+div {
+  display: inline;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  font-family: cursive;
+  font-size: 2.5em;
+  margin: auto;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+table {
+  width: 75%;
+  margin: auto;
+  border-collapse: collapse;
+}
+th, td{
+  text-align: center;
+  border: 1px solid black;
+}
+td {
+  font-weight: medium;
+}
+
+tr:nth-child(even){
+  background-color: lightgrey;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(236, 233, 233);
+}

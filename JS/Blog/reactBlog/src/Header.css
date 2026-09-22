@@ -1,0 +1,66 @@
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: linear-gradient(119deg, rgba(120, 103, 214) 0%, rgba(123, 104, 163) 43%, rgba(220, 159, 237) 100%);
+    border-bottom: 5px solid rgb(156, 181, 197);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    z-index: 1000;
+}
+
+.logo {
+    justify-self: start;
+    height: 2em;
+    padding: 2.25em;
+    padding-left: 1em;
+}
+
+header div {
+    align-self: center;
+    text-align: center;
+    color: white;
+}
+
+header div h1 {
+    margin: 0;
+}
+
+header div h4 {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}
+
+.homeBtn {
+    align-self: flex-end;
+    justify-self: end;
+    margin: 0;
+    padding-right: 1.5em;
+    padding-bottom: .5em;
+    color: white;
+    font-weight: 100;
+    user-select: none;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.homeBtn:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: rgb(89, 89, 187);
+    text-decoration-thickness: 3px;
+}
+
+.homeBtn:active {
+    color: rgb(89, 89, 187);
+}
+
+@media screen and (min-width: 800px) {
+    .logo {
+        height: 3.5em;
+        padding: 1.75em;
+    }
+}

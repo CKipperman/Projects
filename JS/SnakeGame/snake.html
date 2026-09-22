@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        #scoreBar {
+            width: 100%;
+            height: 50px;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        #scoreValue {
+            padding-left: 5px;
+        }
+
+        #theCanvas {
+            display: block;
+            border: 1px solid black;
+            /*box-sizing: border-box;*/
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="scoreBar">Score: <span id="scoreValue">0</span></div>
+    <canvas id="theCanvas"></canvas>
+    <script src="snake.js"></script>
+</body>
+
+</html>

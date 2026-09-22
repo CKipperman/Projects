@@ -1,0 +1,37 @@
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 6em);
+    grid-template-rows: minmax(7em, auto) repeat(5, 6em);
+    width: fit-content;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.span2 {
+    grid-column: span 2;
+}
+
+.display {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: .75em;
+}
+
+.previousOperand {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.5em;
+}
+
+.currentOperand {
+    color: white;
+    font-size: 2.5em;
+}
+
+.calculator button {
+    font-size: 1.5em;
+    font-weight: bold;
+}

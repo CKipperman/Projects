@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Map</title>
+    <style>
+        html {
+            width: 100%;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 1em;
+            align-items: center;
+            margin: 0;
+            padding: 1em;
+        }
+
+        .sidebar,
+        #map {
+            box-sizing: border-box;
+            border-radius: 15px;
+            border: 1px solid rgb(196, 190, 190);
+            height: 95vh;
+            width: 100%;
+        }
+
+        .sidebar {
+            overflow-y: auto;
+        }
+
+        .searchLabel {
+            display: flex;
+            background: #eee;
+            padding: 0.25em;
+            border-radius: 1em;
+            width: fit-content;
+            margin: 1em auto;
+            border: 2px solid #eee;
+        }
+
+        .active {
+            border: 2px solid #007bff;
+        }
+
+        .searchInput {
+            outline: none;
+        }
+
+        img {
+            height: 2.5em;
+            width: 2.5em;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        button,
+        input {
+            background-color: #eee;
+            border: none;
+            padding: 0;
+        }
+
+        #places {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #places li {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 0.75em;
+            margin: 1em;
+            cursor: pointer;
+        }
+
+        li div {
+            display: flex;
+        }
+
+        .sidebar span {
+            flex: 1;
+            align-self: center;
+            padding-left: 1em;
+        }
+
+        .sidebar div img {
+            width: 100px;
+            height: 100px;
+            border-radius: .5em;
+        }
+
+        .sidebar span {
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .sidebar .summary {
+            height: fit-content;
+            border-top: 1px solid #ddd;
+            color: rgba(0, 0, 0, 0.678);
+            padding: .5em;
+            font-style: italic;
+        }
+
+        .markerPic {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        #places .error {
+            border: 1px solid #e57373;
+            border-radius: 15px;
+            color: #c62828;
+            background: #ffebee;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 1em;
+        }
+
+        .error div {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .searchType {
+            display: block;
+            margin: 1em auto;
+            padding: 0.5em 1em;
+            border: 1px solid #ddd;
+            border-radius: 0.5em;
+            background: #fff;
+            font-size: 0.9em;
+            width: 80%;
+            max-width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <select class="searchType">
+            <option value="places">Search Places (Wikipedia)</option>
+            <option value="addresses">Search Addresses (Geocoding)</option>
+        </select>
+        <label class="searchLabel">
+            <button class="icon"><img src="media/searchBtn.png" alt="Search"></button>
+            <input type="search" placeholder="Search" class="searchInput">
+        </label>
+        <ul id="places"></ul>
+    </div>
+    <div id="map"></div>
+    <script>
+        (g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })({
+            key: "API KEY",
+            v: "weekly",
+            // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+            // Add other bootstrap parameters as needed, using camel case.
+        });
+    </script>
+    <script src="map.js"></script>
+</body>
+
+</html>

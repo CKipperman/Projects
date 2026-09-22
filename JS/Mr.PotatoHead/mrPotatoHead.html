@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Potato Head</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+        }
+
+        #sidebar {
+            background: lightblue;
+            overflow-y: scroll;
+            display: inline-block;
+        }
+
+        #sidebar img {
+            position: absolute;
+        }
+
+        .backgrounds img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #main {
+            background-image: url(media/background.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        audio {
+            width: 18em;
+            height: 2em;
+            padding: .5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar">
+            <img src="media/body.png" class="part">
+            <img src="media/eyes1.png" class="part">
+            <img src="media/eyes2.png" class="part">
+            <img src="media/eyes3.png" class="part">
+            <img src="media/eyes4.png" class="part">
+            <img src="media/nose1.png" class="part">
+            <img src="media/nose2.png" class="part">
+            <img src="media/nose3.png" class="part">
+            <img src="media/mouth1.png" class="part">
+            <img src="media/mouth2.png" class="part">
+            <img src="media/mouth3.png" class="part">
+            <img src="media/feet1.png" class="part">
+            <img src="media/feet2.png" class="part">
+            <img src="media/earL.png" class="part">
+            <img src="media/earR.png" class="part">
+            <img src="media/armL.png" class="part">
+            <img src="media/armR.png" class="part">
+    </div>
+    <div id="main">
+        <audio src="media/backgroundMusic.mp3" autoplay controls loop></audio>
+    </div>
+    <script src="mrPotatoHead.js"></script>
+</body>
+
+</html>
