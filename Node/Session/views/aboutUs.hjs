@@ -1,0 +1,2 @@
+<div>about us</div>
+<p>Currently logged in as: <strong>{{name}}</strong></p>

@@ -1,0 +1,9 @@
+{{#nameForm}}
+<form method="POST">
+    <label>
+        Name:
+        <input name="name" placeholder="Your name here">
+        <button>Submit</button>
+    </label>
+</form>
+{{/nameForm}}

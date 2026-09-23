@@ -1,0 +1,2 @@
+<p>Welcome to {{ title }} the website where we save your data for future use</p>
+<h3>You have visited this page <strong>{{visits}}</strong> times</h3>

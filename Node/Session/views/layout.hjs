@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <nav>
+            <a href="/">Home</a> |
+            <a href="/viewCount">View Counter</a> |
+            <a href="/aboutUs">About Us</a>
+        </p>
+    </nav>
+    <hr>
+
+    <h1>{{ title }}</h1>
+    <p>Hi {{name}} Welcome to {{ title }}</p>
+
+    {{> content}}
+</body>
+
+</html>

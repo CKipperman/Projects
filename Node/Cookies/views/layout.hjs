@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <h1>{{ title }}</h1>
+    {{#username}}
+    <h2>Hello, {{username}}!</h2>
+    {{/username}}
+    {{#noUsername}}
+    <em>We don't know your name yet</em>
+    <form method="GET">
+        <label>Your name:
+            <input type="text" name="username" value="{{username}}" placeholder="Enter your name">
+        </label>
+        <button>Remember me</button>
+    </form>
+    {{/noUsername}}
+    {{> content}}
+</body>
+
+</html>
